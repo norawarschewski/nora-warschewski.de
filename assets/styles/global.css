@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-bg: #e5e5e5;
+    --clr-txt: #000000;
+    --clr-acc: #00ffd1;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    color: var(--clr-txt);
+    background-color: var(--clr-bg);
+    overflow-y: scroll;
+}
+
+main {
+    padding-left: 1rem;
+}
+
+.page-header,
+.main-nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    padding: 0.75rem 1.5rem;
+    border-bottom: 0.125rem solid var(--clr-acc);
+}
+
+.main-nav {
+    flex-grow: 1;
+    margin-right: 15vw;
+}
+
+.main-nav__list {
+    list-style: none;
+    padding: 0;
+    justify-content: end;
+    gap: 10rem;
+}
+
+.logo,
+.main-nav__link {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-weight: 400;
+}
+
+.logo-link,
+.main-nav__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-nav__link.active {
+    position: relative;
+}
+
+.main-nav__link.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -0.125rem;
+    right: -0.125rem;
+    bottom: 0.25rem;
+    height: 0.5rem;
+    background-color: var(--clr-acc);
+}
+
+.text-acc {
+    color: var(--clr-acc);
+}
