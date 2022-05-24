@@ -86,7 +86,17 @@ main {
     color: var(--clr-acc);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1550px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
     .page-header {
         border-bottom: none;
         flex-direction: column;
@@ -126,5 +136,24 @@ main {
 @media screen and (max-width: 768px) {
     .main-nav__list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-nav__list > li:nth-of-type(2) {
+        border-right: none;
+        margin-right: -0.75rem;
+    }
+
+    .main-nav__list > li:first-of-type {
+        margin-left: -0.75rem;
+        padding-left: 0.75rem;
+    }
+
+    .main-nav__list > li:first-of-type,
+    .main-nav__list > li:nth-of-type(2) {
+        border-bottom: var(--border-width) solid var(--clr-acc);
+    }
+
+    .main-nav__link {
+        font-size: 1.25rem;
     }
 }

@@ -28,10 +28,13 @@
             .project__img-container {
                 width: 70%;
                 text-align: center;
+                aspect-ratio: 1181 / 664;
             }
 
             .project__img {
-                height: 100%;
+                width: 100%;
+                aspect-ratio: 1181 / 664;
+                object-fit: contain;
             }
 
             .text-acc {
@@ -43,6 +46,54 @@
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 align-items: baseline;
+            }
+
+            .project__info-text > * {
+                margin: 0;
+                line-height: 1.6;
+            }
+
+            @media screen and (max-width: 1550px) {
+                main {
+                    gap: 10rem;
+                }
+
+                .project {
+                    flex-direction: column-reverse;
+                    gap: unset;
+                }
+
+                .project__info,
+                .project__img-container {
+                    width: 100%;
+                }
+
+                .project__info-text {
+                    margin-left: 25vw;
+                    grid-template-columns: 1fr 6fr;
+                }
+
+                .project__img {
+                    height: auto;
+                }
+            }
+
+            @media screen and (max-width: 990px) {
+                .project__info-text {
+                    grid-template-columns: 1fr 4fr;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .project__info-text {
+                    margin-left: 0;
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .project__info-text {
+                    grid-template-columns: 1fr 2fr;
+                }
             }
         </style>
     </head>
@@ -114,7 +165,6 @@
                         src="../../assets/images/projects/type-it-that-way.png"
                         alt=""
                         class="project__img"
-                        style="height: unset; width: 100%"
                     />
                 </section>
             </article>
@@ -183,13 +233,7 @@
                         <p>p5js</p>
                     </div>
                 </section>
-                <section class="project__img-container" style="background-color: #c4c4c4">
-                    <img
-                        src="../../assets/images/projects/placeholder.png"
-                        alt=""
-                        class="project__img"
-                    />
-                </section>
+                <section class="project__img-container" style="background-color: #c4c4c4"></section>
             </article>
         </main>
     </body>
