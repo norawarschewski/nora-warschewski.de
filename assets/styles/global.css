@@ -8,6 +8,7 @@
     --clr-bg: #e5e5e5;
     --clr-txt: #000000;
     --clr-acc: #00ffd1;
+    --border-width: 0.125rem;
 }
 
 html {
@@ -83,4 +84,23 @@ main {
 
 .text-acc {
     color: var(--clr-acc);
+}
+
+@media screen and (max-width: 992px) {
+    .page-header {
+        border-bottom: none;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .main-nav {
+        flex-grow: unset;
+        margin-right: unset;
+    }
+
+    .main-nav__list {
+        border: 0.125rem solid var(--clr-acc);
+        margin-inline: calc((var(--border-width) * (-1)) - 1.5rem);
+        padding-inline: 1.5rem;
+    }
 }
