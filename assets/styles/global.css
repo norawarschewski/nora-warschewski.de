@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "Suisse Screen";
+    font-weight: 200;
+    src: url(../fonts/SuisseScreen-Light-WebS.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Suisse Screen";
+    font-weight: 400;
+    src: url(../fonts/SuisseScreen-Regular-WebS.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Suisse Screen";
+    font-weight: 500;
+    src: url(../fonts/SuisseScreen-Medium-WebS.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Suisse Screen";
+    font-weight: 600;
+    src: url(../fonts/SuisseScreen-SemiBold-WebS.woff2) format("woff2");
+}
+
 *,
 *::before,
 *::after {
@@ -7,12 +31,12 @@
 :root {
     --clr-bg: hsl(0, 0%, 95%);
     --clr-txt: hsl(0, 0%, 0%);
-    --clr-acc: hsl(169, 100%, 47%);
+    --clr-acc: hsl(169, 100%, 45%);
     --border-width: 0.125rem;
 }
 
 html {
-    font-family: sans-serif;
+    font-family: "Suisse Screen";
     font-size: 20px;
 }
 

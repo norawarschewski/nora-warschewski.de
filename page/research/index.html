@@ -6,6 +6,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Projects | Nora Warschewski</title>
         <link rel="stylesheet" href="../../assets/styles/global.css" />
+        <style>
+            .research-container {
+                position: absolute;
+                width: 65%;
+                bottom: 1rem;
+                right: 0;
+                font-size: 2.5rem;
+                padding-left: 0;
+                list-style: none;
+            }
+
+            .research-link {
+                display: grid;
+                align-items: baseline;
+                justify-items: center;
+                grid-template-columns: 3fr 1fr 1fr;
+                text-decoration: none;
+            }
+
+            .research-link__text {
+                justify-self: left;
+            }
+
+            .research-link__year {
+                font-size: 0.5em;
+            }
+
+            .research-link__icon {
+                fill: var(--clr-acc);
+                transform: rotate(135deg);
+                width: 1em;
+                align-self: center;
+            }
+
+            @media screen and (max-width: 1250px) {
+                .research-container {
+                    font-size: 2rem;
+                }
+            }
+
+            @media screen and (max-width: 1100px) {
+                .research-container {
+                    font-size: 1.5rem;
+                    width: 100%;
+                    left: 1rem;
+                }
+                .research-link {
+                    grid-template-columns: 4fr 1fr 1fr;
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .research-link {
+                    grid-template-columns: 3fr 1fr;
+                    margin-bottom: 3rem;
+                }
+
+                .research-link__text {
+                    margin: 0;
+                }
+
+                .research-link__year {
+                    justify-self: start;
+                }
+
+                .research-link__icon {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                }
+            }
+        </style>
     </head>
     <body>
         <header class="page-header">
@@ -19,5 +90,43 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <ul class="research-container">
+                <li>
+                    <a href="#" target="_blank" class="research-link text-acc">
+                        <p class="research-link__text">Generative Type Design</p>
+                        <small class="research-link__year">2022</small>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 24 24"
+                            class="research-link__icon"
+                        >
+                            <path
+                                d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="research-link text-acc">
+                        <p class="research-link__text">Hebrew Typography</p>
+                        <small class="research-link__year">2019</small>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 24 24"
+                            class="research-link__icon"
+                        >
+                            <path
+                                d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </main>
     </body>
 </html>
