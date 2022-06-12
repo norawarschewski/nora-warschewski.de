@@ -96,7 +96,7 @@ main {
 }
 
 .logo-link {
-    color: var(--clr-black);
+    color: var(--clr-txt);
 }
 
 .logo,
@@ -117,6 +117,61 @@ main {
     list-style: none;
 }
 
-.main-nav__link {
-    color: var(--clr-black);
+.main-nav__list > li {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.link-black {
+    background-image: linear-gradient(90deg, white 50%, black 50%);
+}
+
+.link-acc {
+    background-image: linear-gradient(90deg, white 50%, var(--clr-acc) 50%);
+}
+
+.link-hover {
+    color: transparent;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    background-position: right;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.link-hover:hover {
+    background-position: left;
+}
+
+.link-hover::after {
+    content: "";
+    background-color: var(--clr-txt);
+
+    position: absolute;
+    top: -0.25rem;
+    bottom: -0.25rem;
+    left: 100%;
+    right: -100%;
+    z-index: -1;
+}
+
+.link-hover:hover::after {
+    inset: -0.25rem -0.5rem;
+}
+
+.trans-fast,
+.trans-fast:hover,
+.trans-fast::after,
+.trans-fast:hover::after {
+    transition: 0.3s ease-in-out;
+}
+
+.trans-slow,
+.trans-slow:hover,
+.trans-slow::after,
+.trans-slow:hover::after {
+    transition: 0.5s ease-in-out;
 }

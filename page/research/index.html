@@ -14,7 +14,9 @@
             svg {
                 fill: var(--clr-acc);
                 height: 1.5rem;
+
                 transform: rotate(135deg);
+                transition: 0.3s;
             }
 
             .research-container {
@@ -43,6 +45,12 @@
                 grid-column: span 3;
             }
 
+            .research-link:hover svg {
+                fill: white;
+
+                transition-delay: 0.4s;
+            }
+
             .research-year {
                 display: flex;
                 justify-content: space-between;
@@ -55,19 +63,41 @@
             <h1 class="logo"><a href="../../" class="logo-link">Nora Warschewski</a></h1>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li><a href="../projects/" class="main-nav__link">Projects</a></li>
                     <li>
-                        <a href="../research" class="main-nav__link active">Research</a>
+                        <a
+                            href="../projects"
+                            class="main-nav__link link-hover link-black trans-fast"
+                            >Projects</a
+                        >
                     </li>
-                    <li><a href="../ideas" class="main-nav__link">Ideas</a></li>
-                    <li><a href="../info" class="main-nav__link">Info</a></li>
+                    <li>
+                        <a
+                            href="../research"
+                            class="main-nav__link link-hover link-black trans-fast"
+                            >Research</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../ideas" class="main-nav__link link-hover link-black trans-fast"
+                            >Ideas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../info" class="main-nav__link link-hover link-black trans-fast"
+                            >Info</a
+                        >
+                    </li>
                 </ul>
             </nav>
         </header>
         <main class="main-layout">
             <ul class="research-container">
                 <li>
-                    <a href="#" target="_blank" class="research-link text-acc">
+                    <a
+                        href="#"
+                        target="_blank"
+                        class="research-link link-acc link-hover trans-slow"
+                    >
                         <p class="fs-xxl">Generative Type Design</p>
                         <div class="research-year">
                             <small class="fs-m">2022</small>
@@ -86,7 +116,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" class="research-link text-acc">
+                    <a
+                        href="#"
+                        target="_blank"
+                        class="research-link link-acc link-hover trans-slow"
+                    >
                         <p class="fs-xxl">Hebrew Typography</p>
                         <div class="research-year">
                             <small class="fs-m">2019</small>
