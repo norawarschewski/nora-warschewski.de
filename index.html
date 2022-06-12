@@ -7,39 +7,25 @@
         <title>Nora Warschewski</title>
         <link rel="stylesheet" href="./assets/styles/global.css" />
         <style>
+            body {
+                height: 90vh;
+            }
+
+            main {
+                height: 100%;
+
+                align-items: end;
+            }
+
             .hero-text {
                 font-size: 3rem;
-                font-weight: 700;
-                position: absolute;
-                width: 65%;
-                right: 0;
-                bottom: 1rem;
-                padding-right: 10vw;
-            }
 
-            @media screen and (max-width: 992px) {
-                .hero-text {
-                    width: unset;
-                    left: 1rem;
-                    right: 1rem;
-                }
-            }
-
-            @media screen and (max-width: 700px) {
-                .hero-text {
-                    font-size: 2rem;
-                }
-            }
-
-            @media screen and (max-width: 500px) {
-                .hero-text {
-                    font-size: 1.75rem;
-                }
+                grid-column: 3 / 7;
             }
         </style>
     </head>
     <body>
-        <header class="page-header">
+        <header class="page-header main-layout">
             <h1 class="logo"><a href="#" class="logo-link">Nora Warschewski</a></h1>
             <nav class="main-nav">
                 <ul class="main-nav__list">
@@ -50,8 +36,8 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <p class="hero-text">
+        <main class="main-layout">
+            <p class="hero-text container-65">
                 I am a designer, type enthusiast, amateur creative coder, and re-covering academic
                 who’s thriving for new experiences and who likes solving problems.
             </p>

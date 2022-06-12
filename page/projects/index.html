@@ -8,128 +8,92 @@
         <link rel="stylesheet" href="../../assets/styles/global.css" />
         <style>
             main {
-                margin-block: 5rem;
+                padding-block: 5rem;
                 display: flex;
                 flex-direction: column;
                 gap: 3rem;
             }
 
+            h2 {
+                font-weight: 400;
+            }
+
             .project {
-                display: flex;
-                justify-content: space-between;
+                grid-column: span 6;
+
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
                 align-items: end;
-                gap: 5rem;
+                column-gap: 1rem;
+
+                margin-bottom: 4rem;
             }
 
             .project__info {
-                width: 30%;
-            }
-
-            .project__img-container {
-                width: 65%;
-                text-align: center;
-                aspect-ratio: 1181 / 664;
-            }
-
-            .project__img {
-                width: 100%;
-                aspect-ratio: 1181 / 664;
-                object-fit: contain;
-            }
-
-            .text-acc {
-                font-size: 1rem;
-                font-weight: 400;
+                grid-column: span 2;
             }
 
             .project__info-text {
                 display: grid;
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: repeat(4, 1fr);
                 align-items: baseline;
+
+                padding-right: 4rem;
             }
 
-            .project__info-text > * {
-                margin: 0;
-                line-height: 1.6;
+            .project__info-text > p {
+                grid-column: span 3;
             }
 
-            @media screen and (max-width: 1550px) {
-                main {
-                    gap: 10rem;
-                }
+            .project__img-container {
+                aspect-ratio: 1181 / 664;
 
-                .project {
-                    flex-direction: column-reverse;
-                    gap: unset;
-                }
+                grid-column: 3 / 7;
 
-                .project__info,
-                .project__img-container {
-                    width: 100%;
-                }
-
-                .project__info-text {
-                    margin-left: 25vw;
-                    grid-template-columns: 1fr 6fr;
-                }
-
-                .project__img {
-                    height: auto;
-                }
+                margin-right: -1rem;
+                text-align: center;
             }
 
-            @media screen and (max-width: 990px) {
-                .project__info-text {
-                    grid-template-columns: 1fr 4fr;
-                }
-            }
-
-            @media screen and (max-width: 768px) {
-                .project__info-text {
-                    margin-left: 0;
-                }
-            }
-
-            @media screen and (max-width: 600px) {
-                .project__info-text {
-                    grid-template-columns: 1fr 2fr;
-                }
+            .project__img {
+                height: 100%;
             }
         </style>
     </head>
     <body>
-        <header class="page-header">
+        <header class="page-header main-layout">
             <h1 class="logo"><a href="../../" class="logo-link">Nora Warschewski</a></h1>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li><a href="../projects" class="main-nav__link active">Projects</a></li>
-                    <li><a href="../research" class="main-nav__link">Research</a></li>
+                    <li><a href="../projects" class="main-nav__link">Projects</a></li>
+                    <li>
+                        <a href="../research" class="main-nav__link active">Research</a>
+                    </li>
                     <li><a href="../ideas" class="main-nav__link">Ideas</a></li>
                     <li><a href="../info" class="main-nav__link">Info</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main-layout">
             <article class="project">
                 <section class="project__info">
                     <div class="project__info-text">
-                        <h2 class="text-acc">Title</h2>
+                        <h2 class="text-acc fs-normal">Title</h2>
                         <p>Shape it that Way</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Type</h2>
+                        <h2 class="text-acc fs-normal">Type</h2>
                         <p>Thesis</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Disciplines</h2>
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
                         <p>Research, Type design, Book design, Typography</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Tools</h2>
+                        <h2 class="text-acc fs-normal">Tools</h2>
                         <p>Processing, Glyphs</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Supervisors</h2>
+                        <h2 class="text-acc fs-normal">Supervisors</h2>
                         <p>Christian Stindl, Michael Pichler</p>
                     </div>
                 </section>
@@ -144,19 +108,19 @@
             <article class="project">
                 <section class="project__info">
                     <div class="project__info-text">
-                        <h2 class="text-acc">Title</h2>
+                        <h2 class="text-acc fs-normal">Title</h2>
                         <p>Type it that Way</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Type</h2>
+                        <h2 class="text-acc fs-normal">Type</h2>
                         <p>Bachelor Thesis</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Disciplines</h2>
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
                         <p>Research, Book design, Typography, Multilingual</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Supervisors</h2>
+                        <h2 class="text-acc fs-normal">Supervisors</h2>
                         <p>Christian Stindl, Michael Pichler</p>
                     </div>
                 </section>
@@ -171,19 +135,22 @@
             <article class="project">
                 <section class="project__info">
                     <div class="project__info-text">
-                        <h2 class="text-acc">Title</h2>
+                        <h2 class="text-acc fs-normal">Title</h2>
                         <p>Bienenmuseum Duisburg</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Type</h2>
+                        <h2 class="text-acc fs-normal">Type</h2>
                         <p>University / Client</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Disciplines</h2>
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
                         <p>Exhibition design, branding</p>
                     </div>
                 </section>
-                <section class="project__img-container" style="background-color: #dee0df">
+                <section
+                    class="project__img-container container-65"
+                    style="background-color: #dee0df"
+                >
                     <img
                         src="../../assets/images/projects/bienenmuseum-duisburg.png"
                         alt=""
@@ -194,19 +161,22 @@
             <article class="project">
                 <section class="project__info">
                     <div class="project__info-text">
-                        <h2 class="text-acc">Title</h2>
+                        <h2 class="text-acc fs-normal">Title</h2>
                         <p>Querformat Magazin</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Type</h2>
+                        <h2 class="text-acc fs-normal">Type</h2>
                         <p>University / Client</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Disciplines</h2>
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
                         <p>Art direction, UI, UX</p>
                     </div>
                 </section>
-                <section class="project__img-container" style="background-color: black">
+                <section
+                    class="project__img-container container-65"
+                    style="background-color: black"
+                >
                     <img
                         src="../../assets/images/projects/querformat-magazin.png"
                         alt=""
@@ -217,23 +187,26 @@
             <article class="project">
                 <section class="project__info">
                     <div class="project__info-text">
-                        <h2 class="text-acc">Title</h2>
+                        <h2 class="text-acc fs-normal">Title</h2>
                         <p>Poster Generator</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Type</h2>
+                        <h2 class="text-acc fs-normal">Type</h2>
                         <p>Personal</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Disciplines</h2>
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
                         <p>Creative coding, Art direction</p>
                     </div>
                     <div class="project__info-text">
-                        <h2 class="text-acc">Tools</h2>
+                        <h2 class="text-acc fs-normal">Tools</h2>
                         <p>p5js</p>
                     </div>
                 </section>
-                <section class="project__img-container" style="background-color: #c4c4c4"></section>
+                <section
+                    class="project__img-container container-65"
+                    style="background-color: #c4c4c4"
+                ></section>
             </article>
         </main>
     </body>
