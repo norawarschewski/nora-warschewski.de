@@ -34,6 +34,7 @@
     --clr-acc: hsl(240, 100%, 50%);
 
     --border-width: 0.125rem;
+    --size-s: 0.5rem;
     --size-m: 1.5rem;
     --size-l: 2rem;
     --size-xxl: 3rem;
@@ -71,6 +72,10 @@ main {
     color: var(--clr-acc);
 }
 
+.fs-s {
+    font-size: var(--size-s);
+}
+
 .fs-normal {
     font-size: 1rem;
 }
@@ -81,6 +86,14 @@ main {
 
 .fs-xxl {
     font-size: var(--size-xxl);
+}
+
+.fw-light {
+    font-weight: 200;
+}
+
+.fw-sb {
+    font-weight: 500;
 }
 
 .page-header {
@@ -149,7 +162,7 @@ main {
 
 .link-hover::after {
     content: "";
-    background-color: var(--clr-txt);
+    background-color: var(--clr-acc);
 
     position: absolute;
     top: -0.25rem;
