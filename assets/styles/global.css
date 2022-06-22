@@ -58,7 +58,7 @@ a {
 
 main {
     border-top: 1px solid var(--clr-acc);
-}
+} 
 
 .main-layout {
     display: grid;
