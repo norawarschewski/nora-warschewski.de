@@ -58,7 +58,7 @@ a {
 
 main {
     border-top: 1px solid var(--clr-acc);
-} 
+}
 
 .main-layout {
     display: grid;
@@ -188,4 +188,8 @@ main {
 .trans-slow::after,
 .trans-slow:hover::after {
     transition: 0.5s ease-in-out;
+}
+
+#full-width {
+    padding-bottom: 3rem;
 }
