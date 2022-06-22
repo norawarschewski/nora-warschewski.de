@@ -57,7 +57,7 @@ a {
 }
 
 main {
-    border-top: 2px solid var(--clr-acc);
+    border-top: 1px solid var(--clr-acc);
 }
 
 .main-layout {
