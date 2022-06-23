@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Type it that Way | Nora Warschewski</title>
+        <link rel="stylesheet" href="../../../assets/styles/global.css" />
+        <style>
+            main {
+                padding-bottom: 5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+
+            h2 {
+                font-weight: 200;
+            }
+
+            li {
+                overflow: hidden;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            .project-nav {
+                position: fixed;
+                bottom: 3rem;
+            }
+
+            .project-nav > ul {
+                list-style: none;
+                padding-left: 0;
+                line-height: 2;
+            }
+
+            .project-nav > ul > li > a {
+                color: var(--clr-black);
+            }
+
+            .project-nav > ul > li > .active {
+                font-weight: 500;
+                color: var(--clr-acc);
+            }
+
+            .project {
+                grid-column: span 6;
+
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                align-items: end;
+                column-gap: 1rem;
+                margin-bottom: 4rem;
+            }
+
+            .text-block {
+                grid-column: 3 / 7;
+            }
+
+            .title {
+                grid-column: span 6;
+                display: grid;
+                grid-template-columns: 3rem 1fr;
+                align-items: baseline;
+            }
+
+            .info {
+                grid-column: span 6;
+                font-weight: 200;
+                font-size: var(--size-xxl);
+            }
+
+            .title > h2 {
+                font-size: var(--size-xxl);
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            .project__img-caption {
+                font-weight: 300;
+                text-align: left;
+            }
+
+            .project__img-container {
+                grid-column: 3 / 7;
+
+                margin-right: -1rem;
+                text-align: center;
+            }
+
+            .project__img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="page-header main-layout">
+            <h1 class="logo"><a href="../../" class="logo-link">Nora Warschewski</a></h1>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li>
+                        <a
+                            href="../projects"
+                            class="main-nav__link link-hover link-black trans-fast"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="../research"
+                            class="main-nav__link link-hover link-black trans-fast"
+                            >Research</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../ideas" class="main-nav__link link-hover link-black trans-fast"
+                            >Ideas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../info" class="main-nav__link link-hover link-black trans-fast"
+                            >Info</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-layout">
+            <nav class="project-nav">
+                <ul>
+                    <li>
+                        <a href="../shape-it-that-way/">Shape it that Way</a>
+                    </li>
+                    <li>
+                        <a href="../type-it-that-way/" class="active">Type it that Way</a>
+                    </li>
+                </ul>
+            </nav>
+            <article class="project" id="full-height" style="padding-bottom: 3rem">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-01.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                </section>
+            </article>
+            <article class="project text-block">
+                <section class="title">
+                    <small>2019</small>
+                    <h2>Type it that Way</h2>
+                </section>
+                <section class="info">
+                    <p>The bachelor thesis is the result of a research about Hebrew typography and multi-script typesetting.</p>
+                </section>
+                <section class="project__info">
+                    <div class="project__info-text">
+                        <h2 class="text-acc fs-normal">Type</h2>
+                        <p>Bachelor Thesis</p>
+                    </div>
+                    <div class="project__info-text">
+                        <h2 class="text-acc fs-normal">Disciplines</h2>
+                        <p>Research, typography, multi-script typesetting</p>
+                    </div>
+                    <div class="project__info-text">
+                        <h2 class="text-acc fs-normal">Tools</h2>
+                        <p>InDesign, Illustrator</p>
+                    </div>
+                    <div class="project__info-text">
+                        <h2 class="text-acc fs-normal">Supervisors</h2>
+                        <p>Christian Stindl, Michael Pichler</p>
+                    </div>
+                </section>
+            </article>
+            <article class="project">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-02.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                    <p class="project__img-caption">
+                        The book is printed with a Pantone spot colour and handbound.
+                    </p>
+                </section>
+            </article>
+            <article class="project">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-03.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                    <p class="project__img-caption">
+                        The anatomy of Hebrew type.
+                    </p>
+                </section>
+            </article>
+            <article class="project">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-04.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                    <p class="project__img-caption">
+                        An overview of the characters in different languages and their relation.
+                    </p>
+                </section>
+            </article>
+            <article class="project">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-05.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                    <p class="project__img-caption">
+                        The book includes a set of minimalistic outline infographics.
+                    </p>
+                </section>
+            </article>
+            <article class="project">
+                <section class="project__img-container">
+                    <img
+                        src="../../../assets/images/research/BA-thesis/type-it-that-way-06.jpg"
+                        alt=""
+                        class="project__img"
+                    />
+                    <p class="project__img-caption">
+                        The headlines are set in English and Latin, exploiting the moment of different writing directions and flipping the page.
+                    </p>
+                </section>
+            </article>
+        </main>
+        <script src="../../../assets/scripts/heights.js"></script>
+    </body>
+</html>
