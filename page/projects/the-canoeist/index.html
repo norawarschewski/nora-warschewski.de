@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Projects | Nora Warschewski</title>
+        <title>The Canoeist | Nora Warschewski</title>
         <link rel="stylesheet" href="../../../assets/styles/global.css" />
         <style>
             main {
@@ -22,9 +22,13 @@
                 overflow: hidden;
             }
 
+            ul {
+                margin: 0;
+            }
+
             .project-nav {
                 position: fixed;
-                bottom: 0;
+                bottom: 3rem;
             }
 
             .project-nav > ul {
@@ -34,11 +38,11 @@
             }
 
             .project-nav > ul > li > a {
-                font-weight: 200;
                 color: var(--clr-black);
             }
 
             .project-nav > ul > li > .active {
+                font-weight: 500;
                 color: var(--clr-acc);
             }
 
@@ -72,10 +76,11 @@
             .title > h2 {
                 font-size: var(--size-xxl);
                 font-weight: 700;
+                margin-bottom: 0;
             }
 
             .project__img-caption {
-                font-weight: 200;
+                font-weight: 300;
                 text-align: left;
             }
 
@@ -89,7 +94,6 @@
             .project__img {
                 width: 100%;
             }
-
         </style>
     </head>
     <body>
@@ -144,7 +148,7 @@
                     </li>
                 </ul>
             </nav>
-            <article class="project" id="full-height">
+            <article class="project" id="full-height" style="padding-bottom: 3rem">
                 <section class="project__img-container">
                     <img
                         src="../../../assets/images/projects/thumb-canoeist.jpg"
