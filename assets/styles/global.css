@@ -81,9 +81,39 @@ a {
     clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
     transition: clip-path 275ms ease;
 }
+
 span.wavy::before {
     text-decoration-style: wavy;
 }
+
+.underline-link {
+    position: relative;
+    transition: clip-path 275ms ease;
+    }
+
+.underline-link:hover span::before, .underline-link:focus span::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+.underline-link span {
+        position: relative;
+        display: inline-block;
+        color: var(--clr-acc);
+    }
+
+.underline-link span::before {
+        position: absolute;
+        content: attr(data-content);
+        color: var(--clr-acc);
+        text-decoration: underline;
+        text-decoration-color: var(--clr-acc);
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 275ms ease;
+    }
+
+span.underline::before {
+        text-decoration-style: underline;
+    }
 
 .main-layout {
     display: grid;
