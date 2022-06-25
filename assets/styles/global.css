@@ -54,10 +54,35 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-main {
-    border-top: 1px solid var(--clr-acc);
+.link {
+    position: relative;
+    transition: clip-path 275ms ease;
+}
+
+.link:hover span::before, .link:focus span::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.link span {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.link span::before {
+    position: absolute;
+    content: attr(data-content);
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-acc);
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;
+}
+span.wavy::before {
+    text-decoration-style: wavy;
 }
 
 .main-layout {
