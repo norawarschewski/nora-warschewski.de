@@ -62,7 +62,8 @@ a {
     transition: clip-path 275ms ease;
 }
 
-.link:hover span::before, .link:focus span::before {
+.link:hover span::before,
+.link:focus span::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -89,31 +90,32 @@ span.wavy::before {
 .underline-link {
     position: relative;
     transition: clip-path 275ms ease;
-    }
+}
 
-.underline-link:hover span::before, .underline-link:focus span::before {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+.underline-link:hover span::before,
+.underline-link:focus span::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
 
 .underline-link span {
-        position: relative;
-        display: inline-block;
-        color: var(--clr-acc);
-    }
+    position: relative;
+    display: inline-block;
+    color: var(--clr-acc);
+}
 
 .underline-link span::before {
-        position: absolute;
-        content: attr(data-content);
-        color: var(--clr-acc);
-        text-decoration: underline;
-        text-decoration-color: var(--clr-acc);
-        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-        transition: clip-path 275ms ease;
-    }
+    position: absolute;
+    content: attr(data-content);
+    color: var(--clr-acc);
+    text-decoration: underline;
+    text-decoration-color: var(--clr-acc);
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 275ms ease;
+}
 
 span.underline::before {
-        text-decoration-style: underline;
-    }
+    text-decoration-style: underline;
+}
 
 .main-layout {
     display: grid;
@@ -247,4 +249,48 @@ span.underline::before {
 
 #full-width {
     padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .page-header {
+        gap: 0;
+    }
+
+    .main-nav {
+        grid-column: span 2;
+
+        margin-inline: -1rem;
+    }
+
+    .main-nav__list {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+
+        margin-bottom: var(--size-xxl);
+    }
+
+    .main-nav__list > li:first-of-type,
+    .main-nav__list > li:nth-of-type(2) {
+        border-top: 0.05rem solid var(--clr-acc);
+    }
+
+    .main-nav__list > li:first-of-type,
+    .main-nav__list > li:nth-of-type(3) {
+        border-right: 0.05rem solid var(--clr-acc);
+    }
+
+    .main-nav__list > li {
+        width: 100%;
+        border-bottom: 0.05rem solid var(--clr-acc);
+    }
+
+    .main-nav__link {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.25rem 1rem;
+    }
 }
