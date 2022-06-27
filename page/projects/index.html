@@ -58,6 +58,40 @@
             .project__img {
                 width: 100%;
             }
+
+            @media screen and (max-width: 768px) {
+                #full-height {
+                    height: auto !important;
+                }
+
+                .project {
+                    grid-column: span 2;
+
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                }
+
+                .project__info,
+                .project__img-container {
+                    grid-column: span 2;
+                }
+
+                .project__img-container {
+                    margin-right: 0;
+                }
+
+                .project__info-text {
+                    grid-template-columns: 6rem 1fr;
+                    gap: 1rem;
+
+                    padding-right: 0;
+                }
+
+                .project__info-text > p {
+                    grid-column: 2 / 3;
+                }
+            }
         </style>
     </head>
     <body>
@@ -124,7 +158,11 @@
                 <section class="project__info">
                     <div class="project__info-text">
                         <h2 class="text-acc fs-normal">Title</h2>
-                        <p><a href="../projects/lufthansa-inflight-service/">Lufthansa Inflight Entertainment</a></p>
+                        <p>
+                            <a href="../projects/lufthansa-inflight-service/"
+                                >Lufthansa Inflight Entertainment</a
+                            >
+                        </p>
                     </div>
                     <div class="project__info-text">
                         <h2 class="text-acc fs-normal">Year</h2>
@@ -250,7 +288,9 @@
                 <section class="project__info">
                     <div class="project__info-text">
                         <h2 class="text-acc fs-normal">Title</h2>
-                        <p><a href="../projects/bienenmuseum-duisburg/">Bienenmuseum Duisburg</a></p>
+                        <p>
+                            <a href="../projects/bienenmuseum-duisburg/">Bienenmuseum Duisburg</a>
+                        </p>
                     </div>
                     <div class="project__info-text">
                         <h2 class="text-acc fs-normal">Year</h2>
