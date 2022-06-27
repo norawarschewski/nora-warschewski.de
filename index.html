@@ -23,6 +23,16 @@
 
                 grid-column: 3 / 7;
             }
+
+            @media screen and (max-width: 768px) {
+                .hero-text {
+                    font-size: var(--size-m);
+
+                    grid-column: span 2;
+                    padding-right: var(--size-m);
+                    margin-top: 0;
+                }
+            }
         </style>
     </head>
     <body>
