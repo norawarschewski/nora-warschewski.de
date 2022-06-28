@@ -57,12 +57,16 @@
             }
 
             @media screen and (max-width: 768px) {
+                main {
+                min-height: 70vh;
+            }
+
                 .research-container {
                     font-size: var(--size-s);
                     grid-column: span 3;
                     /* padding-right: var(--size-m); */
                     margin-top: 0;
-                }
+            }
 
                 .research-container > li {
                 display: grid;
@@ -71,12 +75,19 @@
                 margin-bottom: 2rem;
             }
 
-            .research-link > p {
-                font-size: 1.9rem;
+                .research-container > li {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 1rem;
+                margin-bottom: 1rem;
             }
 
-            .fs-m {
-                font-size: 1rem;
+                .research-link > p {
+                    font-size: var(--size-m);
+            }
+
+                .fs-m {
+                    font-size: var(--size-s);
             }
             }
         </style>
