@@ -57,6 +57,30 @@
                 width: var(--size-m);
                 transform: rotate(180deg);
             }
+
+            @media screen and (max-width: 768px) {
+                .main-text {
+                    grid-column: span 2;
+                }
+
+                .main-text > p {
+                    font-size: var(--size-m);
+
+                    grid-column: span 2;
+                }
+
+                .project-links__list {
+                    grid-column: span 2;
+                }
+
+                .project-links__list > li {
+                    grid-template-columns: 1fr auto;
+                }
+
+                .project-link {
+                    grid-column: span 2;
+                }
+            }
         </style>
     </head>
     <body>
@@ -136,8 +160,15 @@
                         </a>
                     </li> -->
                     <li>
-                        <a href="../ideas/pattern-generator/" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Pattern Generator">Pattern Generator</span></p>
+                        <a
+                            href="../ideas/pattern-generator/"
+                            class="underline-link project-link text-acc"
+                        >
+                            <p class="fs-xxl">
+                                <span class="underline" data-content="Pattern Generator"
+                                    >Pattern Generator</span
+                                >
+                            </p>
                             <div class="further-info">
                                 <small class="fs-m fw-light">2022</small>
                                 <svg
@@ -155,8 +186,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../ideas/bauhaus-coding-workshop/" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Bauhaus Coding Workshop">Bauhaus Coding Workshop</span></p>
+                        <a
+                            href="../ideas/bauhaus-coding-workshop/"
+                            class="underline-link project-link text-acc"
+                        >
+                            <p class="fs-xxl">
+                                <span class="underline" data-content="Bauhaus Coding Workshop"
+                                    >Bauhaus Coding Workshop</span
+                                >
+                            </p>
                             <div class="further-info">
                                 <small class="fs-m fw-light">2021</small>
                                 <svg
@@ -174,8 +212,16 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://vimeo.com/257525494" target="_blank" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Never stop starting">Never stop starting</span></p>
+                        <a
+                            href="https://vimeo.com/257525494"
+                            target="_blank"
+                            class="underline-link project-link text-acc"
+                        >
+                            <p class="fs-xxl">
+                                <span class="underline" data-content="Never stop starting"
+                                    >Never stop starting</span
+                                >
+                            </p>
                             <div class="further-info">
                                 <small class="fs-m fw-light">2018</small>
                                 <svg
@@ -193,8 +239,16 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://vimeo.com/188698454" target="_blank" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Gabr Onboarding">Gabr Onboarding</span></p>
+                        <a
+                            href="https://vimeo.com/188698454"
+                            target="_blank"
+                            class="underline-link project-link text-acc"
+                        >
+                            <p class="fs-xxl">
+                                <span class="underline" data-content="Gabr Onboarding"
+                                    >Gabr Onboarding</span
+                                >
+                            </p>
                             <div class="further-info">
                                 <small class="fs-m fw-light">2017</small>
                                 <svg
