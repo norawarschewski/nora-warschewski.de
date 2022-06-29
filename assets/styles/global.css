@@ -260,6 +260,8 @@ a {
 
     .page-header {
         gap: 0;
+
+        position: static;
     }
 
     .main-nav {
