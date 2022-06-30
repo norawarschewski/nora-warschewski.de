@@ -8,12 +8,10 @@
         <link rel="stylesheet" href="./assets/styles/global.css" />
         <style>
             body {
-                height: 90vh;
+                height: 100vh;
             }
 
             main {
-                height: 100%;
-
                 align-items: end;
             }
 
@@ -25,6 +23,10 @@
             }
 
             @media screen and (max-width: 768px) {
+                main {
+                    height: calc(100vh - 172px);
+                }
+
                 .hero-text {
                     font-size: var(--size-m);
 
