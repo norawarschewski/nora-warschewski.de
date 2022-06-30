@@ -6,7 +6,12 @@ calcElHeight();
 window.addEventListener("resize", calcElHeight);
 
 function calcElHeight() {
-    const headerHeight = header.clientHeight;
+    const viewPortWidth = document.documentElement.clientWidth;
+    if (viewPortWidth > 768) {
+        const headerHeight = header.clientHeight;
 
-    fullHeightEl.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+        fullHeightEl.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+    } else {
+        fullHeightEl.style.minHeight = null;
+    }
 }
