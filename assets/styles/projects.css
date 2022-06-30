@@ -81,6 +81,10 @@ ul {
     line-height: 1.5rem;
 }
 
+.project__img-caption a {
+    color: var(--clr-acc);
+}
+
 .project__img-container {
     grid-column: 3 / 7;
 
