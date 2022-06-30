@@ -61,6 +61,9 @@ video.project__img-container {
 
 .title {
     grid-column: span 6;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
 }
 
 .info {
