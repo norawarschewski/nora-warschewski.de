@@ -1,5 +1,8 @@
 const header = document.querySelector(".page-header");
-const headerHeight = header.clientHeight;
-
 const fullHeightEl = document.querySelector("#full-height");
-fullHeightEl.style.height = `calc(100vh - ${headerHeight}px)`;
+
+window.addEventListener("resize", function () {
+    const headerHeight = header.clientHeight;
+
+    fullHeightEl.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+});
