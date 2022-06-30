@@ -10,8 +10,11 @@ function calcElHeight() {
     if (viewPortWidth > 768) {
         const headerHeight = header.clientHeight;
 
-        fullHeightEl.style.minHeight = `calc(100vh - ${headerHeight}px)`;
+        fullHeightEl.classList.add("full-height");
+        fullHeightEl.style.setProperty("--header-height", `${headerHeight}px`);
+
+        console.log(fullHeightEl.style.getPropertyValue("--header-height"));
     } else {
-        fullHeightEl.style.minHeight = null;
+        fullHeightEl.classList.remove("full-height");
     }
 }
