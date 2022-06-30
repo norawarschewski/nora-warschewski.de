@@ -253,8 +253,49 @@ a {
     padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 1480px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .page-header.main-layout {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-nav {
+        margin-inline: -1rem;
+    }
+
+    .main-nav__list {
+        gap: 0;
+    }
+
+    .main-nav__list > li {
+        width: 100%;
+        border-block: 0.05rem solid var(--clr-acc);
+    }
+
+    .main-nav__list > li:not(:last-child) {
+        border-right: 0.05rem solid var(--clr-acc);
+    }
+
+    .main-nav__link {
+        display: inline-block;
+        padding: 0.25rem 1rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .main-layout {
+    .main-layout,
+    .page-header.main-layout {
         grid-template-columns: 1fr 1fr;
     }
 
