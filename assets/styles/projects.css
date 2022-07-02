@@ -21,6 +21,10 @@ ul {
     margin: 0;
 }
 
+video.project__img-container {
+    margin-right: 0;
+}
+
 .project-nav {
     position: fixed;
     bottom: 3rem;
@@ -58,7 +62,7 @@ ul {
 .title {
     grid-column: span 6;
     display: grid;
-    grid-template-columns: 3rem 1fr;
+    grid-template-columns: auto 1fr;
     align-items: baseline;
 }
 
