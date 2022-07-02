@@ -155,6 +155,11 @@ a {
     font-weight: 500;
 }
 
+small {
+    font-size: larger;
+    margin-right: 0.8rem;
+}
+
 .page-header {
     align-items: center;
     position: sticky;

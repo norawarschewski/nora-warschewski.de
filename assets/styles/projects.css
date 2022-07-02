@@ -81,7 +81,8 @@ video.project__img-container {
 .project__img-caption {
     font-weight: 200;
     text-align: left;
-    margin-right: 1em;
+    padding-right: 1em;
+    margin: 0.2rem 0;
     line-height: 1.5rem;
 }
 
