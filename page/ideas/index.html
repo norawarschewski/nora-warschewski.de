@@ -20,7 +20,6 @@
 
             .project-links__list {
                 grid-column: 3 / 7;
-
                 padding-left: 0;
                 list-style: none;
             }
@@ -34,7 +33,6 @@
 
             .project-link {
                 grid-column: span 4;
-
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 column-gap: 1fr;
@@ -63,6 +61,30 @@
                 width: var(--size-m);
                 transform: rotate(130deg);
             }
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+
+            figure {
+                margin: 0;
+                display: grid;
+                grid-template-rows: 1fr auto;
+                margin-bottom: 10px;
+                break-inside: avoid;
+            }
+
+            figure > img {
+                grid-row: 1 / -1;
+                grid-column: 1;
+            }
+
+            .container {
+                column-count: 4;
+                column-gap: 10px;
+            }
+
 
             @media screen and (max-width: 768px) {
                 .main-text {
@@ -120,159 +142,84 @@
         <main>
             <section id="full-height" class="main-text main-layout">
                 <p>
-                    Ideas that are are some sort of exploration with tools and smaller things that
-                    didn’t turn into full-fledged projects or which were university projects and
-                    assignments.
+                    This is some sort of a visual diary, exploration and collection of projects; published, unpublished, unfinished.
                 </p>
             </section>
-            <section class="project-links main-layout">
-                <ul class="project-links__list">
-                    <!-- <li>
-                        <a href="#" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Poster Collection">Poster Collection</span></p>
-                            <div class="further-info">
-                                <small class="fs-m fw-light">since ’20</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="underline-link project-link text-acc">
-                            <p class="fs-xxl"><span class="underline" data-content="Book Cover Collection">Book Cover Collection</span></p>
-                            <div class="further-info">
-                                <small class="fs-m fw-light">since ’13</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li> -->
-                    <li>
-                        <a
-                            href="../ideas/pattern-generator/"
-                            class="underline-link project-link text-acc"
-                        >
-                            <p class="fs-xxl">
-                                <span class="underline" data-content="Pattern Generator"
-                                    >Pattern Generator</span
-                                >
-                            </p>
-                            <div class="further-info">
-                                <small class="fs-m fw-light">2022</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="../ideas/bauhaus-coding-workshop/"
-                            class="underline-link project-link text-acc"
-                        >
-                            <p class="fs-xxl">
-                                <span class="underline" data-content="Bauhaus Coding Workshop"
-                                    >Bauhaus Coding Workshop</span
-                                >
-                            </p>
-                            <div class="further-info">
-                                <small class="fs-m fw-light">2021</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://vimeo.com/257525494"
-                            target="_blank"
-                            class="underline-link project-link text-acc"
-                        >
-                            <p class="fs-xxl">
-                                <span class="underline" data-content="Never stop starting"
-                                    >Never stop starting</span
-                                >
-                            </p>
-                            <div class="further-info external-link">
-                                <small class="fs-m fw-light">2018</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://vimeo.com/188698454"
-                            target="_blank"
-                            class="underline-link project-link text-acc"
-                        >
-                            <p class="fs-xxl">
-                                <span class="underline" data-content="Gabr Onboarding"
-                                    >Gabr Onboarding</span
-                                >
-                            </p>
-                            <div class="further-info external-link">
-                                <small class="fs-m fw-light">2017</small>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    x="0px"
-                                    y="0px"
-                                    viewBox="0 0 24 24"
-                                    class="research-link__icon"
-                                >
-                                    <path
-                                        d="M22.5,12a.49971.49971,0,0,1-.5.5H3.207l7.14649,7.14648a.5.5,0,1,1-.707.707l-8-8a.49983.49983,0,0,1,0-.707l8-8a.5.5,0,0,1,.707.707L3.207,11.5H22A.49971.49971,0,0,1,22.5,12Z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <section class="container">
+                <figure>
+                    <img src="https://assets.codepen.io/12005/windmill.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/toronto.jpg" alt="" />
+                </figure>
+                <figure>
+                      <img src="https://assets.codepen.io/12005/suspension-bridge.jpg" alt="" />
+                </figure>
+                <figure>
+                      <img src="https://assets.codepen.io/12005/sunset.jpg" alt="" />
+                </figure>
+                <figure>
+                      <img src="https://assets.codepen.io/12005/snowy.jpg" alt="" />
+                </figure>
+                <figure>
+                      <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="" />
+                </figure>
+                <figure>
+                      <img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/toronto.jpg" alt="" />
+                </figure>
+                <figure>
+                    <img src="https://assets.codepen.io/12005/snowy.jpg" alt="" />
+              </figure>
+              <figure>
+                    <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="" />
+              </figure>
+              <figure>
+                    <img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="" />
+              </figure>
+              <figure>
+                  <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="" />
+              </figure>
+              <figure>
+                  <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="" />
+              </figure>
+              <figure>
+                  <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="" />
+              </figure>
+              <figure>
+                  <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="" />
+              </figure>
+              <figure>
+                  <img src="https://assets.codepen.io/12005/toronto.jpg" alt="" />
+              </figure>
             </section>
+        </section>
         </main>
         <script src="../../assets/scripts/heights.js"></script>
     </body>
