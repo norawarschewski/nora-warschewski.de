@@ -57,6 +57,11 @@ a {
     color: black;
 }
 
+::selection {
+    color: var(--clr-bg);
+    background: black;
+  }
+
 @media (hover: hover) {
     .link {
         position: relative;
