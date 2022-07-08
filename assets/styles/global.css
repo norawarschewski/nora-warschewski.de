@@ -143,6 +143,10 @@ a {
     font-size: var(--size-m);
 }
 
+.fs-l {
+    font-size: var(--size-l);
+}
+
 .fs-xxl {
     font-size: var(--size-xxl);
 }

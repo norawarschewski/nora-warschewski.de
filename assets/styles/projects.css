@@ -28,6 +28,7 @@ video.project__img-container {
 .project-nav {
     position: fixed;
     bottom: 3rem;
+    font-weight: 200;
 }
 
 .project-nav > ul {
