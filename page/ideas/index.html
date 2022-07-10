@@ -65,6 +65,12 @@
             img {
                 max-width: 100%;
                 display: block;
+                filter: grayscale(100%);
+            }
+
+            img:hover {
+                filter: none;
+                -webkit-filter: grayscale(0%);
             }
 
             figure {
@@ -80,11 +86,27 @@
                 grid-column: 1;
             }
 
-            .container {
-                column-count: 4;
-                column-gap: 10px;
+            figure a {
+                color: black;
+                text-decoration: none;
             }
 
+            figcaption {
+                grid-row: 2;
+                grid-column: 1;
+                background-color: rgba(255,255,255,.5);
+                padding: .2em .5em;
+                justify-self: start;
+            }
+
+            .container {
+                column-count: 5;
+                column-gap: 0.5rem;
+            }
+
+            .landscape {
+                grid-column-end: span 2;
+            }
 
             @media screen and (max-width: 768px) {
                 .main-text {
@@ -93,7 +115,6 @@
 
                 .main-text > p {
                     font-size: var(--size-m);
-
                     grid-column: span 2;
                 }
 
@@ -142,7 +163,7 @@
         <main>
             <section id="full-height" class="main-text main-layout">
                 <p>
-                    This is some sort of a visual diary, exploration and collection of projects; published, unpublished, unfinished.
+                    This is some sort of a visual diary, explorations and collection of projects; published, unpublished, unfinished.
                 </p>
             </section>
             <section class="container">
@@ -153,22 +174,25 @@
                     <img src="../../assets/images/ideas/books/05-oma.jpg" alt="" />
                 </figure>
                 <figure>
+                    <img src="../../assets/images/ideas/ui/chatbot.jpg" alt="" />
+                </figure>
+                <figure>
                     <img src="../../assets/images/ideas/books/02-digital-manufacturing.jpg" alt="" />
                 </figure>
+                
                 <figure>
-                    <img src="../../assets/images/ideas/posters/02-never-stop-starting.gif" alt="" />
-              </figure>
-                <figure>
-                    <img src="../../assets/images/ideas/books/04-das-wagnis-der-liebe.jpg" alt="" />
+                    <a href="https://vimeo.com/manage/videos/257525494" target="_blank">
+                        <img src="../../assets/images/ideas/posters/02-never-stop-starting.gif" alt="" />
+                    </a>
                 </figure>
                 <figure>
-                    <img src="../../assets/images/ideas/books/01-round-ireland.jpg" alt="" />
+                    <img src="../../assets/images/ideas/books/04-das-wagnis-der-liebe.jpg" alt="" />
                 </figure>
                 <figure>
                     <img src="../../assets/images/ideas/books/03-angst-02.jpg" alt="" />
                 </figure>
                 <figure>
-                    <img src="../../assets/images/ideas/books/03-angst.jpg" alt="" />
+                   <img src="../../assets/images/ideas/books/03-angst.jpg" alt="" />
                 </figure>
             </section>
         </section>
