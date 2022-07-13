@@ -128,7 +128,6 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
-
     padding-inline: 1rem;
 }
 
@@ -173,6 +172,7 @@ small {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .logo {
