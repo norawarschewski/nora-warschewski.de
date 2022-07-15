@@ -62,13 +62,13 @@
                 transform: rotate(130deg);
             }
 
-            img {
+            img, video {
                 max-width: 100%;
                 display: block;
                 filter: grayscale(100%);
             }
 
-            img:hover {
+            img:hover, video:hover {
                 filter: none;
                 -webkit-filter: grayscale(0%);
             }
@@ -81,7 +81,7 @@
                 break-inside: avoid;
             }
 
-            figure > img {
+            figure > img, figure > .video {
                 grid-row: 1 / -1;
                 grid-column: 1;
             }
@@ -183,6 +183,13 @@
                 <figure>
                     <a href="https://vimeo.com/manage/videos/257525494" target="_blank">
                         <img src="../../assets/images/ideas/posters/02-never-stop-starting.gif" alt="" />
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://vimeo.com/188698454" target="_blank">
+                        <video width="100%" autoplay="autoplay" loop="true" class="video">
+                            <source src="../../assets/images/ideas/ui/gabr-onboarding.mp4" type="video/mp4">
+                        </video>
                     </a>
                 </figure>
                 <figure>
