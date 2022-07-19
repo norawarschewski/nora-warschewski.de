@@ -43,6 +43,7 @@
 html {
     font-family: "Suisse Screen";
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
