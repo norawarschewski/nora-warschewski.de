@@ -93,7 +93,6 @@ video.project__img-container {
 
 .project__img-container {
     grid-column: 3 / 7;
-
     margin-right: -1rem;
     text-align: center;
 }
